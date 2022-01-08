@@ -1,0 +1,89 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  width: 330px;
+  height: 550px;
+  padding: 15px 0;
+  background: var(--red);
+  border-radius: 10px;
+  justify-content: space-around;
+  text-align: center;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+img {
+  object-fit: cover;
+  width: 270px;
+  height: 230px;
+  border-radius: 20px;
+  box-shadow: 5px 3px 25px rgba(0, 0, 0, 0.233);
+  opacity: 0;
+  animation: fadeIn 0.7s 0.1s ease forwards;
+}
+
+.title-container {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.title {
+  font-weight: bold;
+  color: var(--white);
+  opacity: 0;
+  font-size: 30pt;
+  animation: fadeIn 0.7s 0.2s ease forwards;
+}
+
+.price {
+  background: var(--yellow);
+  padding: 10px;
+  font-family: "Roboto";
+  font-weight: 1000;
+  font-size: 36pt;
+  opacity: 0;
+  margin-top: -10px;
+  color: var(--black);
+  animation: fadeIn 0.7s 0.3s ease forwards;
+}
+
+.botao {
+  margin-top: 10px;
+  cursor: pointer;
+  color: var(--black);
+  background: var(--yellow);
+  border: none;
+  font-size: 25pt;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.3s;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.123);
+  animation: fadeIn 0.7s 0.4s ease forwards;
+}
+
+.botao:hover {
+  letter-spacing: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.301);
+  transform: translateY(-5px);
+  background: var(--black);
+  color: var(--yellow);
+}

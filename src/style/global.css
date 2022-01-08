@@ -1,0 +1,40 @@
+:root {
+  --red: #d96060;
+  --white: #f4f4f4;
+  --yellow: #f6f8a4;
+  --black: #343131;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+.pratos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pratosContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
+}
+.main-title{
+  text-align: center;
+  color: var(--red);
+}
+.main-subtitle{
+  text-align: center;
+  color: var(--black);
+}
