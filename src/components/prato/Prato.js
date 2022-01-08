@@ -1,11 +1,19 @@
 import React from "react";
+
+import CheckAnimation from "../../animations/components/CheckAnimation";
+
 import "./prato.css";
 
-function Prato({ imagem, titulo, preco }) {
+function Prato({ imagem, titulo, preco, id, comprar, comprou }) {
   return (
     <>
       <div className="card-container">
         <div className="image-container">
+          {comprou && (
+            <div className="checkAnimationContainer">
+              <CheckAnimation />
+            </div>
+          )}
           <img src={`${imagem}`} alt={`imagem de ${titulo}`} />
         </div>
         <div className="title-container">
@@ -15,7 +23,12 @@ function Prato({ imagem, titulo, preco }) {
           <h2 className="price">R$: {preco}</h2>
         </div>
         <div>
-          <button className="botao">Encomendar</button>
+          <button
+            onClick={() => comprar(id)}
+            className={comprou ? "botao" : "botao-comprou"}
+          >
+            {comprou ? "Encomendado" : "Encomendar"}
+          </button>
         </div>
       </div>
     </>

@@ -3,6 +3,7 @@
   --white: #f4f4f4;
   --yellow: #f6f8a4;
   --black: #343131;
+  --green: #5ee435;
 }
 
 * {
@@ -16,6 +17,7 @@ body {
   color: black;
   margin: 0px;
   padding: 0px;
+  margin-bottom: 20px;
 }
 
 .pratos {
@@ -30,11 +32,11 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5rem;
 }
-.main-title{
+.main-title {
   text-align: center;
   color: var(--red);
 }
-.main-subtitle{
+.main-subtitle {
   text-align: center;
   color: var(--black);
 }
