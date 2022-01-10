@@ -1,5 +1,9 @@
 # App de comida do gordo 
 
+## Regras e padrões 
+
+- [Padrões de branch](./doc/branch.md)
+
 ## Como rodar este projeto 
 
 para rodar o app basta clonar o repositório 
