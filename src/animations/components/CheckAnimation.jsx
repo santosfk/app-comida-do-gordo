@@ -14,8 +14,9 @@ class CheckAnimation extends React.Component {
         ref={this.player} // set the ref to your class instance
         autoplay={true}
         loop={false}
+        playerState={"paused"}
         controls={true}
-        keepLastFrame={true}
+        keepLastFrame={this.props.keepLastFrame}
         src={checkAnimation}
         style={{ height: '230px', width: '270px' }}
       ></Player>

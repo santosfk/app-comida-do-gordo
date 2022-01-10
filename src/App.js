@@ -14,10 +14,6 @@ export default function App() {
     setPratoState(data);
   }, []); // Array de dependências
 
-  useEffect(() => {
-    console.log(pratoState);
-  }, [pratoState]);
-
   const handleCompra = (id) => {
     const prato = pratoState.find((item) => item.id === id);
     prato.comprou = !prato.comprou || false;

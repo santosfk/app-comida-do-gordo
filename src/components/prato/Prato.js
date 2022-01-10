@@ -5,13 +5,28 @@ import CheckAnimation from "../../animations/components/CheckAnimation";
 import "./prato.css";
 
 function Prato({ imagem, titulo, preco, id, comprar, comprou }) {
+  React.useEffect(() => {
+    console.log(comprou);
+  }, [comprou]);
   return (
     <>
       <div className="card-container">
         <div className="image-container">
-          {comprou && (
-            <div className="checkAnimationContainer">
+          {comprou ? (
+            <div
+              className={
+                comprou ? "checkAnimationContainer" : "checkoutAnimationFadeOut"
+              }
+            >
               <CheckAnimation />
+            </div>
+          ) : (
+            <div
+              className={
+                comprou ? "checkAnimationContainer" : "checkoutAnimationFadeOut"
+              }
+            >
+              {/* <CheckAnimation /> */}
             </div>
           )}
           <img src={`${imagem}`} alt={`imagem de ${titulo}`} />
