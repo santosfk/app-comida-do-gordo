@@ -1,8 +1,22 @@
 # App de comida do gordo 
 
-## Regras e padrões 
+## Padrões de branch
 
-- [Padrões de branch](./doc/branch.md)
+As branchs devem ser criadas de acordo com a especificação da task por exemplo 
+se a task atribuida é para a implementação de uma nova feature, então o nome da branch devera ser 
+
+- Feature
+
+```
+feature/nome-da-branch
+```
+
+- Correções de bug (bugfix / fix / hotfix)
+
+```
+fix/nome-da-branch
+```
+
 
 ## Como rodar este projeto 
 
