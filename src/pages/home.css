@@ -10,6 +10,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5rem;
 }
+
 .main-title {
   text-align: center;
   color: var(--red);
@@ -18,4 +19,11 @@
 .main-subtitle {
   text-align: center;
   color: var(--black);
+}
+
+@media screen and (max-width: 900px) {
+  .pratosContainer {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
 }

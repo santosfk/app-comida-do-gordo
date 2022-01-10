@@ -37,6 +37,6 @@
   font-size: 1em;
   color: rgb(85, 80, 80);
   opacity: 0;
-  margin-top: -20px;
+  margin-top: -1rem;
   animation: fadeIn 0.5s 2s forwards;
 }

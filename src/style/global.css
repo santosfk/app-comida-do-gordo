@@ -19,3 +19,18 @@ body {
   padding: 0px;
   margin-bottom: 100px;
 }
+
+h1,
+h2,
+h3,
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  *,
+  body {
+    font-size: 90.5%;
+  }
+}
