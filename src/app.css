@@ -1,25 +1,3 @@
-:root {
-  --red: #d96060;
-  --white: #f4f4f4;
-  --yellow: #f6f8a4;
-  --black: #343131;
-  --green: #56c662;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-body {
-  background: #e5e5e5;
-  font-family: "Roboto", sans-serif;
-  color: black;
-  margin: 0px;
-  padding: 0px;
-  margin-bottom: 100px;
-}
-
 .pratos {
   display: flex;
   flex-direction: column;
@@ -36,6 +14,7 @@ body {
   text-align: center;
   color: var(--red);
 }
+
 .main-subtitle {
   text-align: center;
   color: var(--black);
