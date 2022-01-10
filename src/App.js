@@ -6,7 +6,6 @@ import LoadingScreen from "./components/loadingScreen/LoadingScreen";
 
 import "./style/global.css";
 
-
 export default function App() {
   const [loading, setLoading] = React.useState(false);
 
