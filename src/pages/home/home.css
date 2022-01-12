@@ -20,6 +20,9 @@
   text-align: center;
   color: var(--black);
 }
+.homeContainer{
+  margin-top: 150px;
+}
 
 @media screen and (max-width: 900px) {
   .pratosContainer {
@@ -27,3 +30,4 @@
     padding: 30px;
   }
 }
+

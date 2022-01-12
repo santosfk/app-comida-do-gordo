@@ -1,9 +1,7 @@
 import React from "react";
-
-import Home from "./pages/Home";
 import Header from "./components/header/Header";
 import LoadingScreen from "./components/loadingScreen/LoadingScreen";
-
+import Home from "./pages/home/Home";
 import "./style/global.css";
 
 export default function App() {
@@ -22,9 +20,10 @@ export default function App() {
   return (
     <>
       {loading ? (
-        <>
-          <Header />
-          <Home />
+        <> 
+          
+           <Home/>
+           <Header />
         </>
       ) : (
         <LoadingScreen />
