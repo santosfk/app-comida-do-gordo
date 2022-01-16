@@ -1,0 +1,76 @@
+.modalContainer{
+    position: fixed;
+    color: var(--black);
+    top: 0;
+    right: 0;
+    z-index: 5;
+    width: 200px;
+    height: 250px;
+    background-color: white;
+    margin: 120px 15px ;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.185);
+}
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.closeButton{
+    font-size: 1.5rem;
+    
+}
+.backdrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.192);
+    z-index: 4;
+}
+.formTitle{
+    margin-top: -23px;
+    color: var(--red);
+}
+.inputbox1{
+    margin: 2rem .4rem;
+    font-weight: bold;
+}
+.inputbox2{
+    margin: 2rem .4rem;
+    font-weight: bold;
+}
+#userId{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--black);
+}
+#userPassword{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--black);  
+}
+.inputbox1:focus-within{
+    transform: translateY(-5px);
+    color: var(--red);
+    letter-spacing: 1px;
+    transition:  .4s;
+}
+.inputbox2:focus-within{
+    transform: translateY(-5px);
+    color: var(--red);
+    letter-spacing: 1px;
+    transition:  .4s;
+}
+.clickCadastrar{
+    color: var(--red);
+    padding: 0px 3px;
+    font-weight: bold;
+}
+.cadastroContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
