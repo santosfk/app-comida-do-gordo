@@ -47,3 +47,22 @@
     transform: translateY(-10px);
     color: var(--black);
 }
+.navigationBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+.links{
+  padding: 3rem;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: .4s;
+}
+.links:hover{
+  transform: translateY(-5px);
+  color: var(--black);
+}

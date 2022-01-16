@@ -4,6 +4,7 @@ import LoadingScreen from "./components/loadingScreen/LoadingScreen";
 import Home from "./pages/home/Home";
 import "./style/global.css";
 
+
 export default function App() {
   const [loading, setLoading] = React.useState(false);
 
@@ -21,7 +22,7 @@ export default function App() {
     <>
       {loading ? (
         <> 
-          
+   
            <Home/>
            <Header />
         </>

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+
+
 import data from "../../data/pratos";
 import Prato from "../../components/prato/Prato";
 
@@ -21,6 +23,8 @@ function Home() {
 
   return (
     <>
+   
+    
       <div className="homeContainer">
         <div className="pratos">
           <div className="pratosContainer">
