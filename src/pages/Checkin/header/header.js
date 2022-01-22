@@ -2,7 +2,7 @@ import React from 'react'
  import * as comp from "./style"
  import vector from "./Vector.svg"
  import { Link } from "react-router-dom";
- import Wave from  'react-wavify'
+
 
 const Header = () => {
 return (
