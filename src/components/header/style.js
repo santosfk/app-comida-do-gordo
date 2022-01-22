@@ -1,4 +1,6 @@
-.header-container {
+import styled from 'styled-components'
+
+export const HeaderContainer = styled.div `
   background-color: var(--red);
   display: flex;
   justify-content: space-between;
@@ -10,25 +12,42 @@
   position: fixed;
   top: 0;
   left: 0;
-}
-.title-container {
-    margin-left: 10px;
+`
+
+export const TitleContainer = styled.div `
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
-}
-.main-title2 {
-  color: var(--white);
-  font-size: 2rem;
-}
-.main-subtitle {
+  h1{
+    color: var(--white);
     font-size: 2rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+`
+export const NavigationBar = styled.div`
+ display: flex;
+  justify-content: center;
+  align-items: center;
+ .links{
+    padding: 3rem;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: .4s;
+ }
+ .links:hover{
+  transform: translateY(-5px);
+  color: var(--black);
 }
-.userContainer {
-    margin-right: 10px;
+`
+export const UserContainer = styled.div`
+ margin-right: 10px;
   display: flex;
   gap: 2rem;
-}
-.cart {
+  .cart {
   color: var(--white);
   font-size: 1.7rem;
   cursor: pointer;
@@ -47,22 +66,4 @@
     transform: translateY(-10px);
     color: var(--black);
 }
-.navigationBar{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  
-}
-.links{
-  padding: 3rem;
-  text-decoration: none;
-  color: var(--white);
-  font-weight: bold;
-  font-size: 1.2rem;
-  transition: .4s;
-}
-.links:hover{
-  transform: translateY(-5px);
-  color: var(--black);
-}
+`

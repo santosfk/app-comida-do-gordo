@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-
-
 import data from "../../data/pratos";
 import Prato from "../../components/prato/Prato";
 
-import "./home.css"
+
 
 function Home() {
   const [pratoState, setPratoState] = useState([]);

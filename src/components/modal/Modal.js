@@ -1,37 +1,35 @@
 import  React from "react";
-import "./modal.css"
 import { AiFillCloseCircle as CloseIcon } from 'react-icons/ai';
 import LoginButton from "../loginButton/LoginButton"
+import * as comp from "./style"
 
 function Modal({ usuario,setOpen }) {
 
     return (
        
         <>
-        <div className="modalContainer">
-            <div className="headerContainer">
+        <comp.container> 
+          <comp.headerContainer>
                 <h1>{usuario}</h1>
                 <CloseIcon className="closeButton" onClick={() => setOpen(false)}/>
-            </div>
-            <h1 className="formTitle">Faça login</h1>
-            <div className="inputbox1">
-            <label htmlFor="userId" className="labelUser">Usuário</label>
+                </comp.headerContainer>
+            <h1 >Faça login</h1>
+           <comp.inputbox1>
+            <label htmlFor="userId">Usuário</label>
             <input type="text" id="userId"></input>
-            </div>
-            <div className="inputbox2">
-            <label htmlFor="userPassword" className="labelPassword">Senha</label>
+            </comp.inputbox1>
+            <comp.inputbox2>
+            <label htmlFor="userPassword" >Senha</label>
             <input type="password" id="userPassword" ></input>
-            </div>
+            </comp.inputbox2>
           
             <LoginButton/>
-            <div className="cadastroContainer">
+           <comp.cadastroContainer>
             ou  <spam className="clickCadastrar"> cadastre-se</spam>
-            </div>
+            </comp.cadastroContainer>
             
-        </div>
-        <div className="backdrop" onClick={() => setOpen(false)}>
-
-        </div>
+            </comp.container>
+       <comp.backdrop onClick={() => setOpen(false)}></comp.backdrop>
         </>
         
     )

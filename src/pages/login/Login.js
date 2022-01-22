@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
+
 
 function Login (){
     return(
         <>
-        aqui é a tela de login
+        login aqui
         </>
     )
 }
