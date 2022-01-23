@@ -16,9 +16,9 @@ return (
         <button className="accountTop" > <Link to="signin" className='linkAccount'>Criar Conta</Link></button>
         <button className="loginTop" ><Link to="login" className='linkLogin'>Fazer Login</Link></button>
     </comp.TopButtons>
-  
+ < comp.ImageContainer> 
     <img src={vector} alt='background'/>
-  
+    </comp.ImageContainer>
     </comp.Container>
     </>
 )

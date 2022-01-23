@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 export const Container = styled.div`
-
+width: 100%;
+position: absolute;
+bottom: 50%;
 `
 export const HamburguerContent = styled.div`
 left: 50%;
@@ -33,7 +35,7 @@ export const TruckContent = styled.div`
 position: absolute;
 
 right: 47%;
-bottom:210px;
+top: 50%;
 display:flex;
 justify-content: center;
 img{
@@ -50,9 +52,12 @@ img{
 `
 export const SecondPhrase = styled.div`
 
-position: relative;
-left:40% ;
-top: -80px;
+
+
+display: flex;
+justify-content: center;
+
+
 h1{
     font-size: 2.5rem;
 }

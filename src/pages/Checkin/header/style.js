@@ -1,21 +1,16 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+width: 100%;
+height: 15%;
+position: absolute;
+bottom: 85%;
 
-img{
-    position: relative;
-    width: 105%;
-    height: 299px;
-    top: -170px;
-    left: -5px;
-    z-index: -2;
-    box-shadow: none;
-   
- 
-}
 `
 
+
 export const Title = styled.div`
+position: relative;
 padding-left: 10% ;
 padding-top: 1%;
 h1{
@@ -28,34 +23,30 @@ h2{
 }
 
 `
-export const Form = styled.div`
-background-color: #E55252;
-position: absolute;
-z-index: -1;
-top: 0;
-width: 100vw;
-height: 250px;
 
-`
+
 export const TopButtons = styled.div`
 display: flex;
 justify-content: flex-end;
 align-items: center;
 position: relative;
-right: 1rem;
+right: 3rem;
 bottom: 5.3rem;
 z-index: 10;
+
 .linkAccount{
+    position: relative;
     text-decoration: none;
     color: white;
    
 }.linkLogin{
+    position: relative;
     text-decoration: none;
     color:white
 }
 .accountTop{
-width: 200px;
-height: 47px;
+width: 10rem;
+height: 3rem;
 padding: 5px ;
 margin: 0px 10px ;
 border: none ;
@@ -75,8 +66,8 @@ color: #FBC900;
 letter-spacing: 1px;
 }
 .loginTop{
-width: 200px;
-height: 47px;
+width: 10rem;
+height: 3rem;
 padding: 5px ;
 margin: 0px 10px ;
 border: none;
@@ -94,5 +85,17 @@ transition:.5s ease-in-out;
     border: none;
    letter-spacing: 1px;
    text-shadow: 2px 2px rgb(0,0,0,0.100);
+}
+`
+export const ImageContainer = styled.div`
+position: relative;
+width: 100%;
+
+top: -10rem;
+
+img{
+position:relative;
+width: 100%;
+z-index: -3;
 }
 `
