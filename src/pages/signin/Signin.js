@@ -1,13 +1,7 @@
 import React from "react";
 
-
-function Signin (){
-    return(
-        <>
-        aqui voce faz o seu cadastro
-        </>
-    )
+function Signin() {
+  return <>cadastro aqui</>;
 }
-
 
 export default Signin;

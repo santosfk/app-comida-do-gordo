@@ -1,9 +1,10 @@
-.buttonContainer{
-    display: flex;
+import styled from 'styled-components'
+
+export const container  = styled.div`
+  display: flex;
     justify-content: center;
-}
-.LoginButton{
-    background-color: var(--yellow);
+    button{
+        background-color: var(--yellow);
     width: 10rem;
     height: 3rem;
     border: none;
@@ -13,11 +14,11 @@
     font-weight: bold;
     font-size: 1.4rem;
     transition: .5s;
-    
-}
-.LoginButton:hover{
-    letter-spacing: 2px;
+    }
+    button:hover{
+        letter-spacing: 2px;
     padding: 1px;
     color: var(--yellow);
     background-color: var(--red);
-}
+    }
+`

@@ -1,13 +1,12 @@
 import React from 'react'
-import "./cart.css"
-
+import * as comp from "./style"
 
 const Cart = ({setOpenCart}) =>{
   return (
     <>
     
-     <div className="cartContainer"></div>
-     <div className="cartBackdrop" onClick={() => setOpenCart(false)}></div>
+     <comp.cartContainer></comp.cartContainer>
+     <comp.backdrop onClick={() => setOpenCart(false)}></comp.backdrop>
      </>
       
   )

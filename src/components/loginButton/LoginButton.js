@@ -1,12 +1,14 @@
 import React from "react";
-import "./loginbutton.css"
+import * as comp from "./style"
 
 
- function LoginButton ({palavra}) {
+ function LoginButton () {
      return(
-         <div className="buttonContainer">
-             <button className="LoginButton">palavra</button>
-         </div>
+         <comp.container>
+
+             <button >Login</button>
+         </comp.container>
+        
      )
  }
 
