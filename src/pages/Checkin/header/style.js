@@ -27,8 +27,11 @@ export const TopButtons = styled.div`
   align-items: center;
   position: relative;
   right: 3rem;
+  top: -4rem;
+  border-radius: 7px;
   bottom: 5.3rem;
   z-index: 10;
+  cursor: pointer;
 
   .linkAccount {
     position: relative;
@@ -41,46 +44,49 @@ export const TopButtons = styled.div`
     color: white;
   }
   .accountTop {
-    width: 10rem;
+    width: 15rem;
     height: 3rem;
     padding: 5px;
     margin: 0px 10px;
-    border: none;
     font-size: 1.3rem;
     background-color: #fbc900;
     color: var(--white);
     font-weight: 700;
     text-shadow: 2px 2px rgb(0, 0, 0, 0.3);
     border-radius: 5px;
-    transition: 0.5s ease;
+    border: 3px solid #fbc900;
+    transition: 0.3s ease;
+    cursor: pointer;
   }
   .accountTop:hover {
-    border: 1px solid var(--white);
+    border: 3px solid #fbc900;
     background: none;
     text-shadow: none;
     color: #fbc900;
     letter-spacing: 1px;
   }
   .loginTop {
-    width: 10rem;
+    cursor: pointer;
+    width: 15rem;
     height: 3rem;
     padding: 5px;
     margin: 0px 10px;
     border: none;
-    border: 1px solid #fbc900;
+    border: 3px solid #fbc900;
     background: none;
     color: var(--white);
     border-radius: 5px;
     font-size: 1.3rem;
     font-weight: 700;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
   .loginTop:hover {
     background: #fbc900;
     color: #e55252;
+    border: 3px solid #fbc900;
     border: none;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.3);
     letter-spacing: 1px;
-    text-shadow: 2px 2px rgb(0, 0, 0, 0.1);
   }
 `;
 export const ImageContainer = styled.div`

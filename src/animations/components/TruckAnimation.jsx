@@ -19,7 +19,7 @@ class TruckAnimation extends React.Component {
         controls={true}
         keepLastFrame={true}
         src={animationData}
-        style={{ height: '330px', width: '370px',color:"white",}}
+        style={{ height: '330px', width: '370px', }}
       ></Player>
     );
   }

@@ -2,8 +2,14 @@ import React from "react";
 import * as Styled from "./style";
 import vector from "./Vector.svg";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigation = useNavigate();
+
+  function handleChangeRoute(route) {
+    navigation(`/${route}`);
+  }
   return (
     <>
       <Styled.Container>
@@ -12,13 +18,17 @@ const Header = () => {
           <h2>coma hoje, pague ontem!</h2>
         </Styled.Title>
         <Styled.TopButtons>
-          <button className="accountTop">
+          <button
+            className="accountTop"
+            onClick={() => handleChangeRoute("signin")}
+          >
             {" "}
-            <Link to="signin" className="linkAccount">
-              Criar Conta
-            </Link>
+            Criar Conta
           </button>
-          <button className="loginTop">
+          <button
+            className="loginTop"
+            onClick={() => handleChangeRoute("login")}
+          >
             <Link to="login" className="linkLogin">
               Fazer Login
             </Link>
