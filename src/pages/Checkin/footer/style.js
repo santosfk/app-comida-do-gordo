@@ -5,6 +5,8 @@ export const Container = styled.div`
   width: 100%;
   position: absolute;
   bottom: 0;
+  height: 25%;
+  
 `;
 
 export const AccountContainer = styled.div`
@@ -16,7 +18,7 @@ export const AccountContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+
 
   .link {
     text-decoration: none;
@@ -62,7 +64,8 @@ export const LoginContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+
+
   right: 0px;
 
   .link {
