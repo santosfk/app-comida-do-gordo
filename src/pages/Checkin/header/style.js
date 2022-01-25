@@ -99,5 +99,6 @@ export const ImageContainer = styled.div`
     position: relative;
     width: 100%;
     z-index: -3;
+    box-shadow: none;
   }
 `;
