@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
 import { useState } from "react/cjs/react.development";
 import * as styled from "./style";
-
 import Home from "../home/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { DataContext } from "../../contexts/DataContext";
 
 function Login() {
@@ -12,25 +10,21 @@ function Login() {
   const [receiveUser, setReceiveUser] = useState("");
   const [passwordReceive, setPasswordReceive] = useState("");
 
-  console.log(dataUser);
   function validate() {
-    Object.keys(dataUser).forEach((key, value) => {
-      const users = [dataUser[key]];
-      const usersName = users[0].nome;
-      const usersPassword = users[0].senha;
-      if (usersName === receiveUser && usersPassword === passwordReceive) {
-        setLogar(true);
+    dataUser.map((item) => {
+      const isReady = item.id === dataUser.length - 1;
+
+      if (
+        item.nome === receiveUser &&
+        item.senha === passwordReceive &&
+        isReady
+      ) {
+        return setLogar(true);
       } else {
-        alert("dados incorretos");
+        return console.log("niguem ta vendo");
       }
     });
   }
-
-  <Router>
-    <Routes>
-      <Route path="home" element={<Home />} />
-    </Routes>
-  </Router>;
 
   return (
     <>

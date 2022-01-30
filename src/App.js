@@ -4,6 +4,7 @@ import Foods from "./pages/foods/Foods";
 import Signin from "./pages/signin/Signin";
 import Login from "./pages/login/Login";
 import Checkin from "./pages/Checkin/Checkin";
+import Home from "./pages/home/Home";
 import DataContextProvider from "./contexts/DataContext";
 import "./style/global.css";
 
@@ -33,6 +34,7 @@ export default function App() {
                 <Route path="foods" element={<Foods />} />
                 <Route path="login" element={<Login />} />
                 <Route path="signin" element={<Signin />} />
+                <Route path="home" element={<Home />} />
               </Routes>
             </Router>
           </DataContextProvider>
