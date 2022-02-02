@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import * as style from "./style"
 import data from "../../data/pratos";
 import Prato from "../../components/prato/Prato";
 
