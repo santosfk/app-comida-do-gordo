@@ -35,25 +35,27 @@ function Login() {
   return (
     <>
       <styled.Container>
-        <h1>login aqui</h1>
+        <styled.Title>login aqui</styled.Title>
 
-        <div>
+        <styled.InputBox>
           <label>usuário</label>
           <input
             type="text"
             onChange={(e) => setReceiveUser(e.target.value)}
           ></input>
-        </div>
-        <div>
+        </styled.InputBox>
+
+        <styled.InputBox>
           <label>senha</label>
           <input
             type="password"
             onChange={(e) => setPasswordReceive(e.target.value)}
           ></input>
-        </div>
-        <div>
+        </styled.InputBox>
+
+        <styled.ButtonContent>
           <button onClick={validate}>logar</button>
-        </div>
+        </styled.ButtonContent>
       </styled.Container>
     </>
   );
