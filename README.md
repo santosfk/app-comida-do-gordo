@@ -1,4 +1,7 @@
 # App de comida do gordo 
+Utilize para logar 
+login : gordo
+senha : gordo123
 
 ## Padrões de branch
 
