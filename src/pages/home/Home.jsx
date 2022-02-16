@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import * as style from "./style"
+import * as style from "./style";
 import data from "../../data/pratos";
 import Prato from "../../components/prato/Prato";
 
@@ -19,9 +19,9 @@ function Home() {
 
   return (
     <>
-      <div className="homeContainer">
-        <div className="pratos">
-          <div className="pratosContainer">
+      <style.Container>
+        <style.Pratos>
+          <style.PratosContainer>
             {pratoState.map((item) => {
               return (
                 <Prato
@@ -35,9 +35,9 @@ function Home() {
                 />
               );
             })}
-          </div>
-        </div>
-      </div>
+          </style.PratosContainer>
+        </style.Pratos>
+      </style.Container>
     </>
   );
 }
