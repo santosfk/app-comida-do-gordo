@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import * as style from "./style";
 import data from "../../data/pratos";
 import Prato from "../../components/prato/Prato";
+import Header from "../../components/header/Header";
 
 function Home() {
   const [pratoState, setPratoState] = useState([]);
@@ -20,6 +21,7 @@ function Home() {
   return (
     <>
       <style.Container>
+        <Header />
         <style.Pratos>
           <style.PratosContainer>
             {pratoState.map((item) => {
