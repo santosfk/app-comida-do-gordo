@@ -23,7 +23,7 @@ function Header() {
           <h2> coma hoje pague ontem </h2>
         </TitleContainer>
         <NavigationBar>
-          <Link className="links" to="home">
+          <Link className="links" to="">
             Home
           </Link>
           <Link className="links" to="foods">
