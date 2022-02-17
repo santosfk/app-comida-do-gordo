@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-
+import * as style from "./style";
 import data from "../../data/pratos";
 import Prato from "../../components/prato/Prato";
-
-
+import Header from "../../components/header/Header";
 
 function Home() {
   const [pratoState, setPratoState] = useState([]);
@@ -21,11 +20,10 @@ function Home() {
 
   return (
     <>
-   
-    
-      <div className="homeContainer">
-        <div className="pratos">
-          <div className="pratosContainer">
+      <style.Container>
+        <Header />
+        <style.Pratos>
+          <style.PratosContainer>
             {pratoState.map((item) => {
               return (
                 <Prato
@@ -39,11 +37,11 @@ function Home() {
                 />
               );
             })}
-          </div>
-        </div>
-      </div>
+          </style.PratosContainer>
+        </style.Pratos>
+      </style.Container>
     </>
   );
 }
 
-export default Home
+export default Home;

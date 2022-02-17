@@ -6,3 +6,5 @@ const users = [
     senha: "gordo123",
   },
 ];
+
+export default users;
