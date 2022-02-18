@@ -35,21 +35,23 @@ function Login() {
   return (
     <>
       <styled.Container>
-        <styled.Title>login aqui</styled.Title>
+        <styled.Title>Faça Login</styled.Title>
 
         <styled.InputBox>
-          <label>usuário</label>
+          <label>Usuário</label>
           <input
             type="text"
             onChange={(e) => setReceiveUser(e.target.value)}
+            placeholder="digite seu usuário"
           ></input>
         </styled.InputBox>
 
         <styled.InputBox>
-          <label>senha</label>
+          <label>Senha</label>
           <input
             type="password"
             onChange={(e) => setPasswordReceive(e.target.value)}
+            placeholder="digite sua senha"
           ></input>
         </styled.InputBox>
 

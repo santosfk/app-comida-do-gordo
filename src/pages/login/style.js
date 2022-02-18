@@ -24,16 +24,21 @@ export const InputBox = styled.div`
   color: #ffc01e;
   font-weight: 700;
   input {
-    width: 400px;
+    letter-spacing: 2px;
+    background-color: transparent;
+    width: 250px;
     height: 40px;
     outline: none;
     border: none;
     margin: 10px 10px;
-    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid black;
     transition: 0.5s;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    padding-right: 2px;
+    text-align: center;
     :focus {
-      padding: 5px;
+      transform: translateY(3px);
     }
   }
   label {
@@ -58,6 +63,7 @@ export const ButtonContent = styled.div`
       background-color: transparent;
       color: #e55252;
       border: 1px solid #e55252;
+      letter-spacing: 8px;
     }
   }
 `;
