@@ -6,6 +6,7 @@ import Login from "./pages/login/Login";
 import Checkin from "./pages/Checkin/Checkin";
 import Home from "./pages/home/Home";
 import AboutUs from "./pages/about-us/AboutUs";
+import Card from "./pages/card/Card";
 import DataContextProvider from "./contexts/DataContext";
 import "./style/global.css";
 
@@ -32,11 +33,12 @@ export default function App() {
             <Router>
               <Routes>
                 <Route path="/" element={<Checkin />} />
-                <Route path="home/foods" element={<Foods />} />
-                <Route path="home/about-us" element={<AboutUs />} />
                 <Route path="login" element={<Login />} />
                 <Route path="signin" element={<Signin />} />
                 <Route path="home" element={<Home />} />
+                <Route path="home/card" element={<Card />} />
+                <Route path="home/foods" element={<Foods />} />
+                <Route path="home/about-us" element={<AboutUs />} />
               </Routes>
             </Router>
           </DataContextProvider>
