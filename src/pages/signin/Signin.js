@@ -24,18 +24,19 @@ function Signin() {
   return (
     <style.Container>
       <form onSubmit={handleSubmit(onSubmit)}>
+        <h1>Cadastre-se</h1>
         <label>
-          nome :<input type="text" {...register("nome")}></input>
+          Nome <input type="text" {...register("nome")}></input>
         </label>
         <label>
-          email:
+          Email
           <input type="email" {...register("email")}></input>
         </label>
         <label>
-          senha :<input type="password" {...register("senha")}></input>
+          Senha <input type="password" {...register("senha")}></input>
         </label>
         <label>
-          <input type="submit"></input>
+          <style.Button type="submit">Enviar</style.Button>
         </label>
       </form>
     </style.Container>
