@@ -24,13 +24,13 @@ function Header() {
         </TitleContainer>
         <NavigationBar>
           <Link className="links" to="about-us">
-            about
+            Sobre Nós
           </Link>
           <Link className="links" to="foods">
-            foods
+            Pratos
           </Link>
           <Link className="links" to="card">
-            gordocard
+            Gordocard
           </Link>
         </NavigationBar>
 
