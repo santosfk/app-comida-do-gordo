@@ -1,14 +1,22 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
+import { useState } from "react/cjs/react.production.min";
 import { DataContext } from "../../contexts/DataContext";
 import * as style from "./style";
+import { useNavigate } from "react-router-dom";
 
 function Signin() {
   const { dataUser, setDataUser } = useContext(DataContext);
+  const navigation = useNavigate();
+
+  const handleChangeRoute = (route) => {
+    navigation(`/${route}`);
+  };
 
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     const newDataUser = [...dataUser, data];
+    handleChangeRoute("login");
     const mapNewDataUser = newDataUser.map((item, index) => {
       const newUser = {
         id: index,
