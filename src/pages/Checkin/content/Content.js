@@ -15,7 +15,7 @@ function Content() {
           </h2>
         </Styled.FirstPhrase>
         <Styled.HamburguerContent>
-          <HamburguerAnimation className="hamburguer"></HamburguerAnimation>
+          <HamburguerAnimation className="hamburguer" />
         </Styled.HamburguerContent>
         <Styled.TruckContent>
           <TruckAnimation />
