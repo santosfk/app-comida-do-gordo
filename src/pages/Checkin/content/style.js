@@ -69,6 +69,7 @@ export const FirstPhrase = styled.div`
     }
   }
   @media (max-width: 1675px) {
+    top: 1.5rem;
     h1 {
       font-size: 3rem;
       letter-spacing: 2px;
