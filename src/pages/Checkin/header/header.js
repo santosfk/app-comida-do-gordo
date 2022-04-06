@@ -22,7 +22,6 @@ const Header = () => {
             className="accountTop"
             onClick={() => handleChangeRoute("signin")}
           >
-            {" "}
             Criar Conta
           </button>
           <button
